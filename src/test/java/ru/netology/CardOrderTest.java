@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class сardOrderTest {
+public class CardOrderTest {
 
     @BeforeEach
     void setUp() {
