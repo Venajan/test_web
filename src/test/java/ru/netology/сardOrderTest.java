@@ -33,12 +33,11 @@ public class сardOrderTest {
 
     @Test
     void shouldTestWithYoInNames() {
-        $("input[name='name']").setValue("Алёна Попова");
+        $("input[name='name']").setValue("Алена Попова");
         $("input[type='tel']").setValue("+76665554433");
         $("[data-test-id=agreement]").click();
         $x("//button").click();
         $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
-
     }
 
     @Test
@@ -182,5 +181,4 @@ public class сardOrderTest {
         $x("//button").click();
         $("label.input_invalid").shouldBe(visible);
     }
-
 }
